@@ -6,13 +6,13 @@ using Xunit;
 
 namespace FullApp3.Modules.TimeCard.Tests.ViewModels
 {
-    public class ViewAViewModelFixture
+    public class TimeCardViewModelFixture
     {
         Mock<IMessageService> _messageServiceMock;
         Mock<IRegionManager> _regionManagerMock;
         const string MessageServiceDefaultMessage = "Some Value";
 
-        public ViewAViewModelFixture()
+        public TimeCardViewModelFixture()
         {
             var messageService = new Mock<IMessageService>();
             messageService.Setup(x => x.GetMessage()).Returns(MessageServiceDefaultMessage);
