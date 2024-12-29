@@ -4,7 +4,7 @@
         xmlns:prism="http://prismlibrary.com/"
         prism:ViewModelLocator.AutoWireViewModel="True"
         xmlns:core="clr-namespace:FullApp3.Core;assembly=FullApp3.Core"
-        Title="{Binding Title}" Height="350" Width="525" >
+        Title="{Binding Title}" Height="600" Width="700" FontSize="16" >
     <Grid>
         <ContentControl prism:RegionManager.RegionName="{x:Static core:RegionNames.ContentRegion}" />
     </Grid>

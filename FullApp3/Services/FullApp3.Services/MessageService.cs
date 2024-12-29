@@ -6,7 +6,7 @@ namespace FullApp3.Services
     {
         public string GetMessage()
         {
-            return "Hello from the Message Service";
+            return "今日の予定\nｘｘｘｘｘｘｘ";
         }
     }
 }

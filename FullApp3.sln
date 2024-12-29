@@ -1,4 +1,4 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35208.52
@@ -20,6 +20,11 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FullApp3", "FullApp3\FullApp3\FullApp3.csproj", "{E475608F-BAE5-499D-ABF6-D005AD1F5A82}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FullApp3.Core", "FullApp3\FullApp3.Core\FullApp3.Core.csproj", "{48D21A7B-611B-42DC-BAE6-BCD42C4347C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{44C9631B-9416-4482-BE0A-B8C28C8A6E79}"
+	ProjectSection(SolutionItems) = preProject
+		設計書.md = 設計書.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -60,6 +65,7 @@ Global
 		{C941F12C-599D-45A3-AA95-24DBE01CEDB6} = {5F983E66-CB45-47A0-BFDD-178157047F40}
 		{CF2A9634-6D38-4DB9-BA83-453A017767DC} = {D409A7FA-4934-415A-AE7D-83931A5DE161}
 		{F00BC7D4-1307-4B7D-8CE4-0629A45AF85C} = {D409A7FA-4934-415A-AE7D-83931A5DE161}
+		{44C9631B-9416-4482-BE0A-B8C28C8A6E79} = {5F983E66-CB45-47A0-BFDD-178157047F40}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F8C9CF3A-C52E-45D0-B7B5-E6AE419C63CF}
