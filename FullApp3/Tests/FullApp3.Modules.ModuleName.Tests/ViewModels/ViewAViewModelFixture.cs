@@ -1,10 +1,10 @@
-﻿using FullApp3.Modules.ModuleName.ViewModels;
+﻿using FullApp3.Modules.TimeCard.ViewModels;
 using FullApp3.Services.Interfaces;
 using Moq;
 using Prism.Regions;
 using Xunit;
 
-namespace FullApp3.Modules.ModuleName.Tests.ViewModels
+namespace FullApp3.Modules.TimeCard.Tests.ViewModels
 {
     public class ViewAViewModelFixture
     {
@@ -24,7 +24,7 @@ namespace FullApp3.Modules.ModuleName.Tests.ViewModels
         [Fact]
         public void MessagePropertyValueUpdated()
         {
-            var vm = new ViewAViewModel(_regionManagerMock.Object, _messageServiceMock.Object);
+            var vm = new EditTimeCardViewModel(_regionManagerMock.Object, _messageServiceMock.Object);
 
             _messageServiceMock.Verify(x => x.GetMessage(), Times.Once);
 
@@ -34,7 +34,7 @@ namespace FullApp3.Modules.ModuleName.Tests.ViewModels
         [Fact]
         public void MessageINotifyPropertyChangedCalled()
         {
-            var vm = new ViewAViewModel(_regionManagerMock.Object, _messageServiceMock.Object);
+            var vm = new EditTimeCardViewModel(_regionManagerMock.Object, _messageServiceMock.Object);
             Assert.PropertyChanged(vm, nameof(vm.Message), () => vm.Message = "Changed");
         }
     }

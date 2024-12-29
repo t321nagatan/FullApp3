@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace FullApp3.Modules.ModuleName.Views
+namespace FullApp3.Modules.TimeCard.Views
 {
     /// <summary>
-    /// Interaction logic for ViewA.xaml
+    /// Interaction logic for EditTimeCard.xaml
     /// </summary>
-    public partial class ViewA : UserControl
+    public partial class EditTimeCard : UserControl
     {
-        public ViewA()
+        public EditTimeCard()
         {
             InitializeComponent();
         }

@@ -1,4 +1,4 @@
-﻿using FullApp3.Modules.ModuleName;
+﻿using FullApp3.Modules.TimeCard;
 using FullApp3.Services;
 using FullApp3.Services.Interfaces;
 using FullApp3.Views;
@@ -25,7 +25,7 @@ namespace FullApp3
 
         protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
         {
-            moduleCatalog.AddModule<ModuleNameModule>();
+            moduleCatalog.AddModule<TimeCardModule>();
         }
     }
 }

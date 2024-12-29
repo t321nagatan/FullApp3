@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0-windows</TargetFramework>
@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Modules\FullApp3.Modules.ModuleName\FullApp3.Modules.ModuleName.csproj" />
+    <ProjectReference Include="..\..\Modules\FullApp3.Modules.ModuleName\FullApp3.Modules.TimeCard.csproj" />
   </ItemGroup>
 
 </Project>

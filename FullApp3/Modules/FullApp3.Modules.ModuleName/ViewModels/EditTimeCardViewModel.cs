@@ -2,9 +2,9 @@
 using FullApp3.Services.Interfaces;
 using Prism.Regions;
 
-namespace FullApp3.Modules.ModuleName.ViewModels
+namespace FullApp3.Modules.TimeCard.ViewModels
 {
-    public class ViewAViewModel : RegionViewModelBase
+    public class EditTimeCardViewModel : RegionViewModelBase
     {
         private string _message;
         public string Message
@@ -13,7 +13,7 @@ namespace FullApp3.Modules.ModuleName.ViewModels
             set { SetProperty(ref _message, value); }
         }
 
-        public ViewAViewModel(IRegionManager regionManager, IMessageService messageService) :
+        public EditTimeCardViewModel(IRegionManager regionManager, IMessageService messageService) :
             base(regionManager)
         {
             Message = messageService.GetMessage();
