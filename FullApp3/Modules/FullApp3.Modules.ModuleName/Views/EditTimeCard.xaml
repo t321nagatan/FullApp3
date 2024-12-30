@@ -62,10 +62,10 @@
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
                    FontSize="24"/>
-            <TextBox HorizontalAlignment="Center" Margin="10" TextWrapping="Wrap" Text="{Binding StartText}" VerticalAlignment="Top" Width="272" Height="172"/>
+            <TextBox HorizontalAlignment="Center" Margin="10" TextWrapping="Wrap" Text="{Binding StartText}" AcceptsReturn="True" VerticalAlignment="Top" Width="272" Height="172"/>
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.Column="1" Margin="1">
-            <TextBox HorizontalAlignment="Center" Margin="10" TextWrapping="Wrap" Text="{Binding EndText}" VerticalAlignment="Top" Width="271" Height="172"/>
+            <TextBox HorizontalAlignment="Center" Margin="10" TextWrapping="Wrap" Text="{Binding EndText}" AcceptsReturn="True" VerticalAlignment="Top" Width="271" Height="172"/>
         </StackPanel>
     </Grid>
 </UserControl>
