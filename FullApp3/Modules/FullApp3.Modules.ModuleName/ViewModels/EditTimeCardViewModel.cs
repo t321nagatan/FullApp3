@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Windows.Input;
 using System;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace FullApp3.Modules.TimeCard.ViewModels
 {
@@ -51,6 +52,10 @@ namespace FullApp3.Modules.TimeCard.ViewModels
             get => _selectedStartTime;
             set
             {
+                if (!string.IsNullOrEmpty(value) && !Regex.IsMatch(value, @"^\d{2}:\d{2}$"))
+                {
+                    throw new ArgumentException("SelectedStartTime must be in the format mm:dd", nameof(value));
+                }
                 SetProperty(ref _selectedStartTime, value);
                 createStartText();
                 createEndText();
