@@ -1,0 +1,22 @@
+version: '3'
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+    command: npm start 
+
+
+# 起動方法
+
+## アプリケーションの起動
+### docker compose up -d
+### 「-d」は、バックグラウンドでコンテナを起動するオプションです。
+
+## アプリケーションの停止
+### docker compose down
+
+## アプリケーションの再起動
+### docker compose restart
