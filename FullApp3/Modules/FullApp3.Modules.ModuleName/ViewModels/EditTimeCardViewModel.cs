@@ -52,7 +52,7 @@ namespace FullApp3.Modules.TimeCard.ViewModels
             get => _selectedStartTime;
             set
             {
-                if (!string.IsNullOrEmpty(value) && !Regex.IsMatch(value, @"^\d{2}:\d{2}$"))
+                if (!string.IsNullOrEmpty(value) && !Regex.IsMatch(value, @"^[1-9]?\d:[1-9]?\d$"))
                 {
                     throw new ArgumentException("SelectedStartTime must be in the format mm:dd", nameof(value));
                 }
@@ -128,9 +128,9 @@ namespace FullApp3.Modules.TimeCard.ViewModels
             SelectedWorkDate = DateTime.Now;
 
             // 時間オプションの初期化
-            StartTimeOptions = new List<string> { "08:50", "09:00", "11:00", "12:00", "13:00" };
+            StartTimeOptions = new List<string> { "8:50", "9:00", "11:00", "12:00", "13:00" };
             EndTimeOptions = new List<string> { "18:00", "19:00", "20:00", "21:00" };
-            BreakTimeOptions = new List<string> { "01:10", "01:30" };
+            BreakTimeOptions = new List<string> { "1:10", "1:30" };
 
             // 開始時間の初期値を設定
             SelectedStartTime = StartTimeOptions.First();
@@ -166,10 +166,10 @@ namespace FullApp3.Modules.TimeCard.ViewModels
         public string createCopyText(string[] value)
         {
             string text = "";
-            text += $"{SelectedWorkDate.ToString("M/d")} {value[0]}({WorkType})\n";
-            text += $"開始 ({SelectedStartTime})\n";
-            text += $"終了 ({SelectedEndTime})\n";
-            text += $"休憩 ({SelectedBreakTime})\n";
+            text += $"{SelectedWorkDate.ToString("M/d")} {value[0]} ({WorkType})\n";
+            text += $"開始　{SelectedStartTime}\n";
+            text += $"終了　{SelectedEndTime}\n";
+            text += $"休憩　{SelectedBreakTime}\n";
             return text;
         }
 
