@@ -5,11 +5,11 @@ VisualStudioVersion = 17.11.35208.52
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{90AB706C-E49A-425C-92BB-BDF177A60425}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FullApp3.Modules.TimeCard.Tests", "FullApp3\Tests\FullApp3.Modules.ModuleName.Tests\FullApp3.Modules.TimeCard.Tests.csproj", "{DD85E257-F23B-406F-9319-44381B7265E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FullApp3.Modules.TimeCard.Tests", "FullApp3\Tests\FullApp3.Modules.TimeCard.Tests\FullApp3.Modules.TimeCard.Tests.csproj", "{DD85E257-F23B-406F-9319-44381B7265E2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{5F983E66-CB45-47A0-BFDD-178157047F40}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FullApp3.Modules.TimeCard", "FullApp3\Modules\FullApp3.Modules.ModuleName\FullApp3.Modules.TimeCard.csproj", "{C941F12C-599D-45A3-AA95-24DBE01CEDB6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FullApp3.Modules.TimeCard", "FullApp3\Modules\FullApp3.Modules.TimeCard\FullApp3.Modules.TimeCard.csproj", "{C941F12C-599D-45A3-AA95-24DBE01CEDB6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{D409A7FA-4934-415A-AE7D-83931A5DE161}"
 EndProject

@@ -23,7 +23,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\FullApp3.Core\FullApp3.Core.csproj" />
     <ProjectReference Include="..\..\FullApp3\FullApp3.csproj" />
-    <ProjectReference Include="..\..\Modules\FullApp3.Modules.ModuleName\FullApp3.Modules.TimeCard.csproj" />
+    <ProjectReference Include="..\..\Modules\FullApp3.Modules.TimeCard\FullApp3.Modules.TimeCard.csproj" />
     <ProjectReference Include="..\..\Services\FullApp3.Services.Interfaces\FullApp3.Services.Interfaces.csproj" />
     <ProjectReference Include="..\..\Services\FullApp3.Services\FullApp3.Services.csproj" />
   </ItemGroup>
