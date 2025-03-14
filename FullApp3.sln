@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FullApp3.Core", "FullApp3\F
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{44C9631B-9416-4482-BE0A-B8C28C8A6E79}"
 	ProjectSection(SolutionItems) = preProject
-		設計書.md = 設計書.md
+		document.md = document.md
 	EndProjectSection
 EndProject
 Global
