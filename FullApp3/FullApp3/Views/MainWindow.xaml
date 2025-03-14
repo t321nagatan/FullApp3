@@ -6,8 +6,23 @@
         xmlns:core="clr-namespace:FullApp3.Core;assembly=FullApp3.Core"
         Title="{Binding Title}" Height="600" Width="700" FontSize="16" >
     <Grid>
-        <Button Content="タイムカード入力" 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button Grid.Row="0" Grid.Column="0"
+                Content="タイムカード入力" 
                 Command="{Binding NavigateToTimeCardCommand}"
+                Margin="10"
+                Padding="10,5"/>
+        <Button Grid.Row="0" Grid.Column="1"
+                Content="タイムカード一覧" 
+                Command="{Binding NavigateToTimeCardListCommand}"
                 Margin="10"
                 Padding="10,5"/>
     </Grid>
