@@ -18,7 +18,7 @@ namespace FullApp3.Modules.TimeCard.Views
     /// <summary>
     /// Interaction logic for EditTimeCard.xaml
     /// </summary>
-    public partial class EditTimeCard : UserControl
+    public partial class EditTimeCard : Window
     {
         public EditTimeCard()
         {

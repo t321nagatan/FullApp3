@@ -1,13 +1,14 @@
-﻿<UserControl x:Class="FullApp3.Modules.TimeCard.Views.EditTimeCard"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:FullApp3.Modules.TimeCard.Views"
-             xmlns:prism="http://prismlibrary.com/" xmlns:conv="clr-namespace:FullApp3.Modules.TimeCard.Converter" xmlns:vm="clr-namespace:FullApp3.Modules.TimeCard.ViewModels"
-             prism:ViewModelLocator.AutoWireViewModel="True">
+﻿<Window x:Class="FullApp3.Modules.TimeCard.Views.EditTimeCard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:FullApp3.Modules.TimeCard.Views"
+        xmlns:prism="http://prismlibrary.com/" xmlns:conv="clr-namespace:FullApp3.Modules.TimeCard.Converter" xmlns:vm="clr-namespace:FullApp3.Modules.TimeCard.ViewModels"
+        Title="タイムカード入力" Height="600" Width="800"
+        prism:ViewModelLocator.AutoWireViewModel="True">
 
-    <UserControl.Resources>
+    <Window.Resources>
         <conv:EqualityConverter x:Key="EqualityConverter"/>
-    </UserControl.Resources>
+    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -68,4 +69,4 @@
             <TextBox HorizontalAlignment="Center" Margin="10" TextWrapping="Wrap" Text="{Binding EndText}" AcceptsReturn="True" VerticalAlignment="Top" Width="271" Height="172"/>
         </StackPanel>
     </Grid>
-</UserControl>
+</Window>
